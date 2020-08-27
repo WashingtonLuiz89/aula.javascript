@@ -1,4 +1,53 @@
-var d = new Date();
+function clicou(){
+   document.getElementById("agradecimento").innerHTML ="Obrigado por Clicar!";
+   // console.log(document.getElementById("agradecimento"));
+    // alert("Obrigado por clicar!");
+}
+function redirecionar(){
+    window.open("https://www.google.com.br/");
+    //window.location.href = "https://www.google.com.br/";
+}
+function trocar(elemento){
+    elemento.innerHTML = "Obrigado por passar o mouse aqui";
+    //document.getElementById("mousemove").innerHTML ="Obrigado por passar o mouse aqui!";
+    //alert("trocar texto");
+}
+function voltar(elemento){
+    elemento.innerHTML = "passe o mouse aqui!";
+    //document.getElementById("mousemove").innerHTML ="passe o mouse aqui!";
+}
+function load(){
+    alert("pagina carregada");
+}
+function funcaochange(elemento){
+    console.log(elemento.value);
+}
+
+/*function soma(n1,n2){
+    return n1 + n2 ;
+    }
+    var validar =0;
+function validaridade(idade){
+     if (idade >=18){
+    validar = true;
+    }else{
+        validar =false
+    }
+return validar;
+}
+var idade = prompt("Qual e a sua idade");
+console.log(validaridade(idade));
+/*function soma(n1,n2){
+    return n1 + n2 ;
+    }
+function setReplace(frase, nome , novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+alert(soma(5,10));
+alert(setReplace("vai japão","japão", "brasil"));
+
+
+/*var d = new Date();
  alert(d.getMonth());
  alert(d.getDay());
  alert(d.getMinutes());
